@@ -1,23 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState, useEffect} from "react"
+import axios from 'axios';
+
+
 
 function App() {
+
+  const [answer, setAnswer] = useState("")
+  const [guess, setGuess] = useState("")
+  let randomGuess = 'apple'
+
+  const getWord = () => {
+    axios
+    .get('https://random-word-api.herokuapp.com/word?length=5')
+    .then(res => {
+      setAnswer(res.data)
+    })
+    .catch(err => {
+      console.error(err)
+    })
+  }
+
+  const checkGuess = (randomGuess) => {
+    axios
+      .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${randomGuess}`)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }
+
+  useEffect(() => {
+    setAnswer(getWord());
+    
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello</h1>
+      <p>Here is the answer {answer}</p>
+      <p>What is your guess? {guess}</p>
     </div>
   );
 }
