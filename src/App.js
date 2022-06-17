@@ -33,9 +33,9 @@ function App() {
     });
   };
 
-  const checkGuess = (randomGuess) => {
+  const checkGuess = (guess) => {
     axios
-      .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${randomGuess}`)
+      .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${guess}`)
       .then(res => {
         setNotWord(false) 
         makeGuess(guess);
