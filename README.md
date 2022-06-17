@@ -1,11 +1,11 @@
 # Hello! #
 
-This is a Wordle clone I created to mimic the original! The game is fully functioning, the only changes that can be made at this point are styling and better sorting the game into different files to make it look a little cleaner *And forcing answers to be exactly 5 letters long*. Below will be the instructions for those who have not played, the two api's I utilize, and reasoning as to why I did some of the things I did. 
+This is a Wordle clone I created to mimic the original! The game is fully functioning, the only changes that can be made at this point are styling and better sorting the game into different files to make it look a little cleaner. Below will be the instructions for those who have not played, the two api's I utilize, and reasoning as to why I did some of the things I did. 
 
 ### `npm start` ###
 
 Runs in localhost:3000
-Reloading the page or hitting the Restart button will start a new game with a new word
+Reloading the page or hitting the Restart button will start a new game with a new word.
 
 # Instructions #
 
@@ -27,7 +27,7 @@ Grey - This letter is not in the answer at all.
 
 If the answer was "STEEP" and you guessed "CLEAN" the E would turn green but you would receive no hint saying there is another E in the answer. However, if the answer was "APPLE" and you guessed "STEEP" only one of the E's would turn yellow, informing you there is exactly one E in the answer. 
 
-If the answer was "APPLE" and you guessed "PLUMP" both P's would turn yellow, informing you there are two P's in the answer.
+If the answer was "APPLE" and you guessed "PLUMP" both P's would turn yellow, informing you there are at least two P's in the answer. 
 
 ***
 
