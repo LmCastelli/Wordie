@@ -105,7 +105,9 @@ function App() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    checkGuess(guess);
+    if(guess.length === 5){
+      checkGuess(guess);
+    }
   }
 
   const handleChange = (e) => {
