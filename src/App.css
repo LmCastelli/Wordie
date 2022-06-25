@@ -34,7 +34,7 @@ input {
   width: 10%;
   height: 50px;
   margin: 4%;
-  border: solid grey 2px;
+  border: solid grey 1px;
   background-color: white;
   text-align: center;
 }
@@ -45,6 +45,7 @@ input {
   font-weight: bold;
   text-align: center;
   color: white;
+  margin-top: 35%;
 }
 
 p {
