@@ -108,6 +108,7 @@ function App() {
     if(guess.length === 5){
       checkGuess(guess);
     }
+    setGuess("")
   }
 
   const handleChange = (e) => {
