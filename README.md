@@ -1,6 +1,6 @@
 # Hello! #
 
-This is a Wordle clone I created to mimic the original! The game is fully functioning, the only changes that can be made at this point are styling and better sorting the game into different files to make it look a little cleaner. Below will be the instructions for those who have not played, the two api's I utilize, and reasoning as to why I did some of the things I did. 
+This is a Wordle clone I created to mimic the original! The game is fully functioning, although I do need to adjust a few things for it to look a little cleaner on mobile. Below will be the instructions for those who have not played, the two api's I utilize, and reasoning as to why I did some of the things I did. 
 
 ### `npm start` ###
 
